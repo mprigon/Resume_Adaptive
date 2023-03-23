@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="header">
+    <div class="grid-wrapper">
+      <div class="grid-item item-1">
+        <p><img src="img/image1-photo.jpg" margin="5" object-fit="fill" alt="Иллюстрация: фото"></p>
+      </div>
+      <div class="grid-item item-2">
+        <p>Иванов Иван Иванович</p>
+        <p>Возраст 25 лет</p>
+        <p>Проживаю в Санкт-Петербурге</p>
+      </div>
+      <div class="grid-item item-3"><p>Целевая вакансия: Junior Python Developer/Python разработчик</p></div>
+      <div class="grid-item item-4"><p>Дополнительная информация: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-3 menu">
+      <ul>
+        <li>
+          <button type="button" class="collapsible">Контакты</button>
+          <div class="content">
+            <p>Телефон 000, Телеграм BotFather, электронная почта yandex.ru</p>
+          </div>
+        </li>
+        <li>
+          <button type="button" class="collapsible">Опыт работы</button>
+          <div class="content">  
+          <p>Junior, пока без опыта</p>
+          </div>
+        </li>
+        <li>
+          <button type="button" class="collapsible">Образование</button>
+          <div class="content">
+            <p>SkillFactory, Fullstack разработчик на Python, Junior</p>
+            <p>Высшее техническое, инженер</p>
+          </div>
+        </li>
+        <li>
+          <button type="button" class="collapsible">Владение языками</button>
+          <div class="content">
+            <p>Английский язык</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+      
+    <div class="col-6">
+      <div>
+      <h1>Профессиональные данные</h1>
+          <img src="img/image9.jpg" width="600" height="553" alt="Мое фото">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div>
+        <p><h2>Умение работать в коллективе</h2></p>
+        <p>
+          <img src="img/image3.jpg" alt="Иллюстрация: работа в коллективе">
+          "А мы уже помирились. Помирились, когда дядю Федора из снега вытаскивали. 
+          Потому что совместный труд, для моей пользы - он объединяет./"(Кот Матроскин)
+        </p>
+      </div>
+    </div>
+
+    <div class="col-3 right">
+      <div class="aside">
+        <h2>Что уже умею?</h2>
+        <p>Python, Бэкэнд на Django, REST API</p>
+        <h2>Где можно посмотреть мой код?</h2>
+        <p>Публичной доступ в GitHub.</p>
+        <h2>Чем уверенно пользуюсь?</h2>
+        <p>Django, Django Rest Framework, Python, JavaScript.</p>
+        <p><img src="img/image8.jpg" vspace="20" hspace="5" alt="Иллюстрация: человек работает"></p>
+      </div>
+    </div>
+  </div>
+
+  <h1>My Skills</h1>
+  
+  <p>HTML</p>
+  <div class="container">
+    <div class="skills html">80%</div>
+  </div>
+  
+  <p>CSS</p>
+  <div class="container">
+    <div class="skills css">70%</div>
+  </div>
+  
+  <p>JavaScript</p>
+  <div class="container">
+    <div class="skills js">70%</div>
+  </div>
+  
+  <p>Python</p>
+  <div class="container">
+    <div class="skills pyth">90%</div>
+  </div>
+
+  <div class="footer">
+    <p>Вы можете изменить размер окна браузера, чтобы увидеть реакцию кода.</p>                    
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <noscript>Ваш браузер не поддерживает JavaScript!</noscript>
+</body>
+</html>
